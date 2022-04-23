@@ -1,10 +1,12 @@
 import "./Header.css";
-import Navigation from "../Navigation/Navigation";
+import logo from "../../images/Utal.svg";
 
 function Header(props) {
   return (
     <header className="header">
-      <Navigation/>
+      <img src={logo} alt="Логотип Utal" className="header__logo" />
+      <button className="header__button">Профиль</button>
+      <button className="header__button">Выйти</button>
     </header>
   );
 }

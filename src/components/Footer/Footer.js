@@ -1,25 +1,12 @@
 import "./Footer.css";
+import logo from "../../images/Utal grey.svg";
 
 function Footer(props) {
     return (
 <footer className="footer">
-<h2 className="footer__title">
-Учебный проект Яндекс.Практикум х BeatFilm.
-</h2>
-<div className="footer__info">
-<div className="footer__links">
-<a href="https://praktikum.yandex.ru" target="blank" className="footer__link">
-Яндекс.Практикум
-</a>
-<a href="https://github.com/pagemaster14" target="blank" className="footer__link">
-Github
-</a>
-<a href="https://vk.com/id2674643" target="blank" className="footer__link">
-VK
-</a>
-</div>
-<p className="footer__copyright"> ©2022 </p>
-</div>
+    <p className="footer__copywright">© Copywright</p>
+    <p className="footer__year">2022</p>
+    <img src={logo} alt="Логотип Utal" className="footer__logo" />
 </footer>
     );
   }

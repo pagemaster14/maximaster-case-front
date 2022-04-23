@@ -1,0 +1,24 @@
+.profile {
+    display: flex;
+    min-width: 1600px;
+    margin: 57px 0 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.profile__button {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../images/Plus.svg);
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: none;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.profile__button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
