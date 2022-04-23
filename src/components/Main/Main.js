@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Profile from "../Profile/Profile";
 import Cards from "../Cards/Cards";
+import ProfilePopup from "../ProfilePupup/ProfilePupup";
 
 function Main(props) {
   return (
@@ -12,6 +13,7 @@ function Main(props) {
       <Profile />
       <Cards />
       <Footer />
+      <ProfilePopup />
     </>
   );
 }

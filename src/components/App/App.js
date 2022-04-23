@@ -4,12 +4,11 @@ import Main from "../Main/Main";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 function App() {
-
   return (
     <CurrentUserContext.Provider>
       <div className="page">
         <Switch>
-          <Route
+          <Route 
             exact
             path="/"
             component={Main}

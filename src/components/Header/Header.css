@@ -24,10 +24,17 @@
 
 .header__button:first-of-type {
     margin: 0 20px 0 1024px;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
 }
 
 .header__button:hover {
     color: #FFFFFF;
     background-color: #0A0A0A;
     cursor: pointer;
+}
+
+.header__button:first-of-type:hover {
+    color: #0A0A0A;
+    background-color: #FFFFFF;
 }

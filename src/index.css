@@ -2,7 +2,7 @@
 @import url(./vendor/fonts/fonts.css);
 
 .page {
-    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: #FFFFFF;
     min-width: 320px;

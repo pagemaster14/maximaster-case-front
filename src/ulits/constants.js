@@ -1,1 +1,0 @@
-export const SHORT_MOVIE_DURATION = 40;
