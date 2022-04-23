@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Profile from "../Profile/Profile";
 import Cards from "../Cards/Cards";
 import ProfilePopup from "../ProfilePupup/ProfilePupup";
+import CreateTaskPopup from "../CreateTaskPopup/CreateTaskPopup";
 
 function Main(props) {
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
@@ -36,11 +37,12 @@ function Main(props) {
 
   return (
     <>
-      <Header />
+      <Header handlePopupOpen={handlePopupOpen}/>
       <Profile handlePopupOpen={handlePopupOpen}/>
       <Cards />
       <Footer />
       <ProfilePopup isPopupOpen={isPopupOpen} handlePopupClose={handlePopupClose} handleOverlayClose={handleOverlayClose}/>
+      <CreateTaskPopup/>
     </>
   );
 }

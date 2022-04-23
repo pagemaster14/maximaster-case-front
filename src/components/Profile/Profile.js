@@ -8,7 +8,7 @@ function Profile(props) {
       <section className="profile">
     <Bio/>
     <Timer/>
-    <button className="profile__button" arialabel="Open" onClick={props.handlePopupOpen}></button>
+    <button className="profile__button"></button>
     </section>
   );
 }
