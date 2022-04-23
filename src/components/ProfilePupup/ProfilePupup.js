@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProfilePopup.css";
 import avatar from "../../images/Avatar.svg";
+import Clocks from "../Clock/Clock";
 
 function ProfilePopup(props) {
     const handleOverlayClose = (event) => {
@@ -28,7 +29,9 @@ function ProfilePopup(props) {
                     <li className="profilePopup__info">О себе:</li>
                     <li className="profilePopup__infoSpan">Занимаюсь спортом Люблю футбол Всегда стараюсь выполнять работу вовремя</li>
                 </ul>
-                <p className="profilePopup__clock">21:45 мск</p>
+                <div className="profilePopup__clock">
+                    <Clocks />
+                </div>
                 <h2 className="profilePopup__portfolio">Портфолио:</h2>
                 <div className="profilePopup__portfolioContainer">
                     <div className="profilePopup__portfolioBlock"></div>
