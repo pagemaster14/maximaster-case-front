@@ -8,41 +8,41 @@ import ProfilePopup from "../ProfilePupup/ProfilePupup";
 import CreateTaskPopup from "../CreateTaskPopup/CreateTaskPopup";
 
 function Main(props) {
-  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+  const [isProfilePopupOpen, setIsProfilePopupOpen] = React.useState(false);
+  const [isCreateTaskPopupOpen, setIsCreateTaskPopupOpen] = React.useState(false);
 
-  function handlePopupOpen() {
-      setIsPopupOpen(true);
-    }
-  
-    function handlePopupClose() {
-      setIsPopupOpen(false);
-    }
-  
-    const handleOverlayClose = (event) => {
-      if (event.target === event.currentTarget && isPopupOpen) {
+  function handleProfilePopupOpen() {
+    setIsProfilePopupOpen(true);
+  }
+
+  function handleCreateTaskPopupOpen() {
+    setIsCreateTaskPopupOpen(true);
+  }
+
+  function handlePopupClose() {
+    setIsProfilePopupOpen(false);
+    setIsCreateTaskPopupOpen(false);
+  }
+
+  React.useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === "Escape") {
         handlePopupClose();
       }
     };
-  
-    React.useEffect(() => {
-      const closeByEscape = (e) => {
-        if (e.key === "Escape") {
-          handlePopupClose();
-        }
-      };
-      document.addEventListener("keydown", closeByEscape);
-  
-      return () => document.removeEventListener("keydown", closeByEscape);
-    }, []);
+    document.addEventListener("keydown", closeByEscape);
+
+    return () => document.removeEventListener("keydown", closeByEscape);
+  }, []);
 
   return (
     <>
-      <Header handlePopupOpen={handlePopupOpen}/>
-      <Profile handlePopupOpen={handlePopupOpen}/>
+      <Header handlePopupOpen={handleProfilePopupOpen} />
+      <Profile handlePopupOpen={handleCreateTaskPopupOpen} />
       <Cards />
       <Footer />
-      <ProfilePopup isPopupOpen={isPopupOpen} handlePopupClose={handlePopupClose} handleOverlayClose={handleOverlayClose}/>
-      <CreateTaskPopup/>
+      <ProfilePopup isPopupOpen={isProfilePopupOpen} handlePopupClose={handlePopupClose} />
+      <CreateTaskPopup isPopupOpen={isCreateTaskPopupOpen} handlePopupClose={handlePopupClose} />
     </>
   );
 }

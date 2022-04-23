@@ -3,12 +3,16 @@ import "./ProfilePopup.css";
 import avatar from "../../images/Avatar.svg";
 
 function ProfilePopup(props) {
-
+    const handleOverlayClose = (event) => {
+        if (event.target === event.currentTarget && props.isPopupOpen) {
+            props.handlePopupClose();
+        }
+    };
     return (
-        <div className={`profilePopup ${props.isPopupOpen ? "profilePopup_opened" : ""}`} onMouseDown={props.handleOverlayClose}>
+        <div className={`profilePopup ${props.isPopupOpen ? "profilePopup_opened" : ""}`} onMouseDown={handleOverlayClose}>
             <div className="profilePopup__container">
                 <h2 className="profilePopup__login">philippka</h2>
-                <button className="profilePopup__closeButton" arialabel="Close" onMouseDown={props.handleOverlayClose}></button>
+                <button className="profilePopup__closeButton" arialabel="Close" onMouseDown={handleOverlayClose}></button>
                 <div className="profilePopup__workInfo">
                     <img src={avatar} alt="Аватар пользователя" className="profilePopup__avatar" />
                     <p className="profilePopup__position">Тимлид Дизайн</p>

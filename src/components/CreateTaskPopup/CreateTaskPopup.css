@@ -12,14 +12,14 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1;
-  }
-  
-  .createTaskPopup_opened {
+}
+
+.createTaskPopup_opened {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .createTaskPopup__container {
+}
+
+.createTaskPopup__container {
     min-width: calc(100% - 100px);
     min-height: 75vh;
     background: #FFFFFF;
@@ -28,4 +28,165 @@
     top: 100px;
     bottom: 503px;
     overflow: auto;
-  }
+}
+
+.createTaskPopup__task {
+    margin: 0;
+    padding: 29px 0 29px 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.createTaskPopup__closeButton {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/Cross.svg);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 0;
+}
+
+.createTaskPopup__info {
+    margin: 50px 0 0 50px;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(2, 46.5px);
+    grid-template-areas: "createTaskPopup__avatar createTaskPopup__name""createTaskPopup__avatar createTaskPopup__city";
+    gap: 4px 30px;
+}
+
+.createTaskPopup__avatar {
+    width: 100px;
+    height: 100px;
+    grid-area: createTaskPopup__avatar;
+}
+
+.createTaskPopup__name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    grid-area: createTaskPopup__name;
+}
+
+.createTaskPopup__city {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.75);
+    grid-area: createTaskPopup__city;
+}
+
+.createTaskPopup__deadline {
+    position: absolute;
+    top: 117px;
+    right: 49px;
+}
+
+.createTaskPopup__deadlineHeader {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.createTaskPopup__deadlineTime {
+    margin: 0;
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: #47CA64;
+}
+
+.createTaskPopup__deadlineDate {
+    margin: 0;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    color: rgba(71, 202, 100, 0.75);
+}
+
+.form {
+    margin: 50px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__header {
+    margin: 40px 0 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.form__header:first-of-type {
+    margin: 0;
+}
+
+.form__textarea {
+    margin-top: 30px;
+    max-width: 71%;
+    height: 200px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.form__textarea:first-of-type {
+    max-width: 46.6%;
+    height: 100px;
+}
+
+.createTaskPopup__creator {
+    margin: 50px 0 84px 50px;
+    display: grid;
+    grid-template-columns: 267px 1fr;
+    grid-template-rows: repeat(2, 28px);
+    gap: 33px 83px;
+    grid-template-areas: "createTaskPopup__creatorHeader createTaskPopup__creatorHeader1" "createTaskPopup__creatorText createTaskPopup__creatorText1";
+}
+
+.createTaskPopup__creatorHeader {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    grid-area: createTaskPopup__creatorHeader1;
+}
+
+.createTaskPopup__creatorHeader:first-of-type {
+    grid-area: createTaskPopup__creatorHeader;
+}
+
+.createTaskPopup__creatorText {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    grid-area: createTaskPopup__creatorText1;
+}
+
+.createTaskPopup__creatorText:first-of-type {
+    grid-area: createTaskPopup__creatorText;
+}
