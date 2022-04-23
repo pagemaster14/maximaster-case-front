@@ -6,9 +6,9 @@ import DoneCards from "../DoneCards/DoneCards";
 function Cards(props) {
     return (
         <section className="cards">
-            <InitialCards />
             <InProgressCards />
             <DoneCards />
+            <InitialCards />
         </section>
     );
 }

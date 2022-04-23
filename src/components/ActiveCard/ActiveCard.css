@@ -1,50 +1,50 @@
-.card {
-    height: 450px;
+.activeCard {
+    height: 920px;
     border: 1px solid rgba(0, 0, 0, 0.75);
     border-radius: 1px;
     position: relative;
 }
 
-.card:hover {
+.activeCard:hover {
     background-color: #000000;
 }
 
-.card:hover p {
+.activeCard:hover p {
     color: rgba(255, 255, 255, 0.5);
-  }
+}
 
-  .card:hover h2 {
+.activeCard:hover h2 {
     color: #FFFFFF;
-  }
+}
 
-.card__container {
+.activeCard__container {
     padding: 40px 0 0 40px;
 }
 
 
-.card__executor {
+.activeCard__executor {
     margin: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     align-items: center;
 }
 
-.card__name {
+.activeCard__name {
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
     align-items: center;
     margin: 30px 0 0;
 }
 
-.card__creator {
+.activeCard__creator {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     align-items: center;
     color: rgba(0, 0, 0, 0.5);
     margin: 0;
@@ -53,20 +53,20 @@
     bottom: 50px;
 }
 
-.card__button {
+.activeCard__button {
     position: absolute;
-    right: 25px;
+    right: 50px;
     bottom: 50px;
     background-image: url(../../images/Strelka.svg);
-    width: 54px;
-    height: 26px;
+    width: 67.47px;
+    height: 33px;
     border: none;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: contain;
 }
 
-.card__button:hover {
+.activeCard__button:hover {
     opacity: 0.6;
 }

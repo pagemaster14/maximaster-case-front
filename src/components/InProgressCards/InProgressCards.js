@@ -1,12 +1,11 @@
 import "./InProgressCards.css";
-import Card from "../Card/Card";
+import ActiveCard from "../ActiveCard/ActiveCard";
 
 function InProgressCards(props) {
     return (
         <section className="inProgressCards">
-            <Card />
-            <Card />
-            <Card />
+            <h1 className="inProgressCards__name">Активно</h1>
+            <ActiveCard />
         </section>
     );
 }
