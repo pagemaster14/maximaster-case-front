@@ -1,8 +1,16 @@
 .timer {
+    max-width: 169px;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.05em;
-    margin: 0 126px 0 582px;
+    margin: 0 91px 0 582px;
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.timer:hover {
+    cursor: pointer;
 }
