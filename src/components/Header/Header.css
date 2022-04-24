@@ -38,3 +38,23 @@
     color: #0A0A0A;
     background-color: #FFFFFF;
 }
+
+.header__navButton {
+    margin: 0 20px 0 1140px;
+    min-width: 200px;
+    height: 49px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0A0A0A;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+.header__navButton:hover {
+    color: #FFFFFF;
+    background-color: #0A0A0A;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.register {
+    margin: 300px 0 384px 626px;
+}
+
+.register__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+}
+
+.register__text {
+    margin: 0;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.register__openButton {
+    width: 350px;
+    height: 100px;
+    padding: 0;
+    margin-top: 80px;
+    background: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.register__openButton:hover {
+    color: #0A0A0A;
+    background-color: #FFFFFF;
+}
