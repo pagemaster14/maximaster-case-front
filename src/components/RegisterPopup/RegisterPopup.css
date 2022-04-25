@@ -84,3 +84,24 @@
   background: #000000;
   color: #FFFFFF;
 }
+
+.registerPopup__roleButton {
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.registerPopup__roleButton:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.registerPopup__roleButton_active {
+  background: rgba(0, 0, 0, 0.25);
+}

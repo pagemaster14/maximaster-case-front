@@ -5,11 +5,23 @@ import { Link } from "react-router-dom";
 
 function RegisterPopup(props) {
 
-      const handleOverlayClose = (event) => {
+    const handleOverlayClose = (event) => {
         if (event.target === event.currentTarget && props.isPopupOpen) {
             props.handlePopupClose();
         }
     };
+
+    const [isRightButtonClicked, setIsRightButtonClicked] = React.useState(false);
+    const [isLeftButtonClicked, setIsLeftButtonClicked] = React.useState(true);
+
+    function handleRoleButtonClick() {
+        setIsRightButtonClicked(!isRightButtonClicked);
+        setIsLeftButtonClicked(!isLeftButtonClicked);
+    }
+
+    const roleButtoRightClassName = `registerPopup__roleButton ${isRightButtonClicked && "registerPopup__roleButton_active"
+        }`;
+    const roleButtonLeftClassName = `registerPopup__roleButton ${isLeftButtonClicked && "registerPopup__roleButton_active"}`;
 
     return (
         <div className={`registerPopup ${props.isPopupOpen ? "registerPopup_opened" : ""}`} onMouseDown={handleOverlayClose} >
@@ -18,8 +30,8 @@ function RegisterPopup(props) {
                 <button className="registerPopup__closeButton" arialabel="Close" onMouseDown={handleOverlayClose}></button>
                 <p className="registerPopup__subtitle">Кто вы?</p>
                 <div className="registerPopup__buttonBox">
-                    <button className="registerPopup__roleButton">Работник</button>
-                    <button className="registerPopup__roleButton">Руководитель</button>
+                    <button className={roleButtonLeftClassName} onMouseDown={handleRoleButtonClick}>Работник</button>
+                    <button className={roleButtoRightClassName} onMouseDown={handleRoleButtonClick}>Руководитель</button>
                 </div>
                 <form className="registerPopup__form">
                     <h3 className="registerPopup__formName">ФИО</h3>
@@ -62,7 +74,7 @@ function RegisterPopup(props) {
                     <input className="registerPopup__formPortfolioCheckbox" type="checkbox"></input>
                     <p className="registerPopup__formPortfolioAgreement">Я принимаю условия Пользовательского соглашения и даю своё согласие Utal на обработку моей персональной информации</p>
                     <Link to="/">
-                    <button className="registerPopup__formSubmit">Зарегистрироваться</button>
+                        <button className="registerPopup__formSubmit">Зарегистрироваться</button>
                     </Link>
                 </form>
             </div>
