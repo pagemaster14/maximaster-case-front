@@ -36,4 +36,5 @@
 .register__openButton:hover {
     color: #0A0A0A;
     background-color: #FFFFFF;
+    cursor: pointer;
 }

@@ -72,19 +72,6 @@
   margin: 30px 0 0 50px;
 }
 
-.registerPopup__formSubmit {
-  margin: 40px 0 40px 50px;
-  width: 400px;
-  height: 100px;
-  padding: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  background: #000000;
-  color: #FFFFFF;
-}
-
 .registerPopup__roleButton {
   width: 200px;
   height: 50px;
@@ -104,4 +91,284 @@
 
 .registerPopup__roleButton_active {
   background: rgba(0, 0, 0, 0.25);
+}
+
+.registerPopup__form {
+  margin: 30px 100px 0 50px;
+  display: grid;
+  gap: 10px 50px;
+  grid-template-columns: 50%;
+  grid-template-areas: "registerPopup__formName registerPopup__formName"
+    "registerPopup__formInputName registerPopup__formInputName"
+    "registerPopup__formLogin registerPopup__formPassword"
+    "registerPopup__formInputLogin registerPopup__formInputPassword"
+    "registerPopup__formTelefon registerPopup__formEmail"
+    "registerPopup__formInputTelefon registerPopup__formInputEmail"
+    "registerPopup__formCity registerPopup__formTimeZone"
+    "registerPopup__formInputCity registerPopup__formInputTimeZone"
+    "registerPopup__formBirth registerPopup__formBirth"
+    "registerPopup__formInputBirth registerPopup__formInputBirth"
+    "registerPopup__formTelegram registerPopup__formTelegram"
+    "registerPopup__formInputTelegram registerPopup__formInputTelegram"
+    "registerPopup__formBio registerPopup__formBio"
+    "registerPopup__formInputBio registerPopup__formInputBio"
+    "registerPopup__formPosition registerPopup__formPosition"
+    "registerPopup__formInputPosition registerPopup__formInputPosition"
+    "registerPopup__formDepartment registerPopup__formDepartment"
+    "registerPopup__formInputDepartment registerPopup__formInputDepartment"
+    "registerPopup__formChief registerPopup__formChief"
+    "registerPopup__formInputChief registerPopup__formInputChief"
+    "registerPopup__formPortfolioTitle registerPopup__formPortfolioTitle"
+    "registerPopup__formPortfolio registerPopup__formPortfolio"
+    "registerPopup__formPortfolioCheckboxContainer registerPopup__formPortfolioCheckboxContainer"
+    "registerPopup__formSubmit ."
+}
+
+.registerPopup__formTitle {
+  margin: 10px 0 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.registerPopup__formTitle:first-of-type {
+  margin: 0;
+}
+
+.registerPopup__formInput {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 0.75);
+  min-height: 50px;
+}
+
+.registerPopup__formName {
+  grid-area: registerPopup__formName;
+}
+
+.registerPopup__formInputName {
+  grid-area: registerPopup__formInputName;
+}
+
+.registerPopup__formLogin {
+  grid-area: registerPopup__formLogin;
+}
+
+.registerPopup__formPassword {
+  grid-area: registerPopup__formPassword;
+}
+
+.registerPopup__formInputLogin {
+  grid-area: registerPopup__formInputLogin;
+}
+
+.registerPopup__formInputPassword {
+  grid-area: registerPopup__formInputPassword;
+}
+
+.registerPopup__formTelefon {
+  grid-area: registerPopup__formTelefon;
+}
+
+.registerPopup__formEmail {
+  grid-area: registerPopup__formEmail;
+}
+
+.registerPopup__formInputTelefon {
+  grid-area: registerPopup__formInputTelefon;
+}
+
+.registerPopup__formInputEmail {
+  grid-area: registerPopup__formInputEmail;
+}
+
+.registerPopup__formCity {
+  grid-area: registerPopup__formCity;
+}
+
+.registerPopup__formTimeZone {
+  grid-area: registerPopup__formTimeZone;
+}
+
+.registerPopup__formInputCity {
+  grid-area: registerPopup__formInputCity;
+}
+
+.registerPopup__formInputTimeZone {
+  grid-area: registerPopup__formInputTimeZone;
+}
+
+.registerPopup__formBirth {
+  grid-area: registerPopup__formBirth;
+}
+
+.registerPopup__formInputBirth {
+  grid-area: registerPopup__formInputBirth;
+}
+
+.registerPopup__formTelegram {
+  grid-area: registerPopup__formTelegram;
+}
+
+.registerPopup__formInputTelegram {
+  grid-area: registerPopup__formInputTelegram;
+}
+
+.registerPopup__formBio {
+  grid-area: registerPopup__formBio;
+}
+
+.registerPopup__formInputBio {
+  grid-area: registerPopup__formInputBio;
+}
+
+.registerPopup__formPosition {
+  grid-area: registerPopup__formPosition;
+}
+
+.registerPopup__formInputPosition {
+  grid-area: registerPopup__formInputPosition;
+}
+
+.registerPopup__formDepartment {
+  grid-area: registerPopup__formDepartment;
+}
+
+.registerPopup__formInputDepartment {
+  grid-area: registerPopup__formInputDepartment;
+}
+
+.registerPopup__formChief {
+  grid-area: registerPopup__formChief;
+}
+
+.registerPopup__formInputChief {
+  grid-area: registerPopup__formInputChief;
+}
+
+.registerPopup__formPortfolioTitle {
+  grid-area: registerPopup__formPortfolioTitle;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.registerPopup__formPortfolio {
+  grid-area: registerPopup__formPortfolio;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+
+.registerPopup__formPortfolioAvatar {
+  width: 150px;
+  height: 150px;
+}
+
+.registerPopup__formPortfolioAvatar:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.registerPopup__formPortfolioAvatarAdd {
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url(../../images/Addtask.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.registerPopup__formPortfolioAvatarAdd:hover {
+  cursor: pointer;
+}
+
+.registerPopup__formPortfolioProjectBox {
+  display: flex;
+  margin-left: 100px;
+  gap: 30px;
+}
+
+.registerPopup__formPortfolioProject {
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 150px;
+}
+
+.registerPopup__formPortfolioProject:hover button {
+  opacity: 1;
+  visibility: visible;
+}
+
+.registerPopup__formPortfolioProjectButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url(../../images/Addtaskgrey.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.registerPopup__formPortfolioProjectButton:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.registerPopup__formPortfolioCheckboxContainer {
+  grid-area: registerPopup__formPortfolioCheckboxContainer;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.registerPopup__formPortfolioCheckbox {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+}
+
+.registerPopup__formPortfolioCheckbox:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.registerPopup__formPortfolioAgreement {
+  margin: 0 0 0 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+
+.registerPopup__formSubmit {
+  grid-area: registerPopup__formSubmit;
+  margin: 32px 0 40px 0;
+  width: 400px;
+  height: 100px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.registerPopup__formSubmit:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
