@@ -3,6 +3,7 @@
 
 .page {
     font-family: 'Roboto', 'Inter', sans-serif;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
     background-color: #FFFFFF;
     min-width: 320px;

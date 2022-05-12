@@ -1,29 +1,13 @@
 import "./Clock.css";
-import React, { Component } from "react";
+import React from "react";
 
-class Clocks extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hours: new Date().getHours().toLocaleString(),
-            minutes: new Date().getMinutes().toLocaleString(),
-        };
-    }
-    componentDidMount() {
-        this.intervalID = setInterval(() => this.tick(), 1000);
-    }
-    componentWillUnmount() {
-        clearInterval(this.intervalID);
-    }
-    tick() {
-        this.setState({
-            hours: new Date().getHours().toLocaleString(),
-            minutes: new Date().getMinutes().toLocaleString(),
-        });
-    }
-    render() {
-        return <p className="appClock">{this.state.hours}:{this.state.minutes} мск</p>;
-    }
+function Clocks()  {
+
+    return (
+        <p className="appClock">{ new Date().toLocaleTimeString().slice(0, 5) } мск</p>
+    )
 }
+
+setInterval(Clocks, 1000);
 
 export default Clocks;

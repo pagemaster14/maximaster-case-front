@@ -9,6 +9,7 @@ function ProfilePopup(props) {
             props.handlePopupClose();
         }
     };
+
     return (
         <div className={`profilePopup ${props.isPopupOpen ? "profilePopup_opened" : ""}`} onMouseDown={handleOverlayClose}>
             <div className="profilePopup__container">
