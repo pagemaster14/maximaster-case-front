@@ -11,6 +11,10 @@ function Header(props) {
         <button className="header__button" arialabel="Open" onClick={props.handlePopupOpen}>Профиль</button>
         <button className="header__button">Выйти</button>
       </Route>
+      <Route exact path="/supervisor">
+        <button className="header__button" arialabel="Open" onClick={props.handlePopupOpen}>Профиль</button>
+        <button className="header__button">Выйти</button>
+      </Route>
       <Route exact path="/signup">
         <button className="header__navButton" onClick={props.handleLoginPopupOpen}>Войти</button>
       </Route>

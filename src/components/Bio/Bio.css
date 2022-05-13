@@ -13,13 +13,13 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    align-items: center;
     margin: 0;
     padding: 0 0 0 20px;
 }
 
 .bio_info:first-of-type {
     padding: 0 20px 0;
+    white-space: nowrap;
 }
 
 .bio__span {

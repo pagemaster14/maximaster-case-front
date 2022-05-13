@@ -1,0 +1,54 @@
+.supervisor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.supervisor__list {
+    margin: 40px 0 0 50px;
+}
+
+.supervisor__listDepartments {
+    position: relative;
+    max-width: 360px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.supervisor__listDepartment {
+    padding: 22px 0 22px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    border-radius: 3px 3px 0px 0px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+}
+
+.supervisor__listDepartment:last-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.supervisor__listDepartment:hover {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.supervisor__listItemContainer {
+    position: absolute;
+    top: 0;
+    left: 369px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.supervisor__listItemContainer_opened {
+    opacity: 1;
+    visibility: visible;
+}

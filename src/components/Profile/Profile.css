@@ -1,6 +1,7 @@
 .profile {
     display: flex;
-    min-width: 1600px;
+    justify-content: space-between;
+    min-width: calc(100% - 100px);
     margin: 57px 0 0;
     background: rgba(0, 0, 0, 0.05);
 }
