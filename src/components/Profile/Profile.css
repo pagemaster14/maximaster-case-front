@@ -11,12 +11,6 @@
     padding-left: 30px;
 }
 
-.profile__container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1500px;
-}
-
 .profile__button {
     padding: 0;
     width: 40px;

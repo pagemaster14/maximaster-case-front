@@ -24,10 +24,6 @@
     color: #000000;
 }
 
-.employeeItem__link:hover {
-    color: #FFFFFF;
-}
-
 .employeeItem__avatar {
     margin: 13px 0 13px 35px;
     width: 74px;

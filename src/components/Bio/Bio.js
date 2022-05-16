@@ -5,7 +5,7 @@ import { Route } from "react-router-dom";
 function Bio(props) {
   return (
     <div className="bio_container">
-      <Route exact path="/">
+      <Route exact path="/worker">
         <img src={avatar} alt="Аватар пользователя" className="bio__avatar" />
       </Route>
       <p className="bio_info">{props.name}</p>
