@@ -38,7 +38,7 @@ function Main(props) {
   return (
     <>
       <Header handlePopupOpen={handleProfilePopupOpen} />
-      <Profile handlePopupOpen={handleCreateTaskPopupOpen} />
+      <Profile handlePopupOpen={handleCreateTaskPopupOpen} name="ФИЛИПП КАРПОВ" department="ОТДЕЛ ДИЗАЙНА"/>
       <Cards />
       <Footer />
       <ProfilePopup isPopupOpen={isProfilePopupOpen} handlePopupClose={handlePopupClose} />

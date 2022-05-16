@@ -6,16 +6,16 @@ import Supervisor from "../Supervisor/Supervisor";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 function App() {
+
   return (
     <CurrentUserContext.Provider>
       <div className="page">
         <Switch>
           <Route
-            exact
-            path="/"
+            path="/worker"
             component={Main}
           />
-          <Route path="/signup">
+          <Route exact path="/">
             <Register />
           </Route>
           <Route path="/supervisor">

@@ -1,9 +1,20 @@
 .profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     min-width: calc(100% - 100px);
-    margin: 57px 0 0;
+    margin: 56px 0 0;
     background: rgba(0, 0, 0, 0.05);
+}
+
+.profile__supervisor {
+    justify-content: start;
+    padding-left: 30px;
+}
+
+.profile__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
 }
 
 .profile__button {
@@ -17,7 +28,7 @@
     background-size: 50%;
     border: none;
     border-radius: 50%;
-    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .profile__button:hover {

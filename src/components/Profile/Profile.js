@@ -6,13 +6,20 @@ import Timer from "../Timer/Timer";
 
 function Profile(props) {
   return (
+    <>
+    <Route exact path="/worker">
     <section className="profile">
-      <Bio />
-      <Route exact path="/">
+      <Bio name={props.name} department={props.department}/>
         <Timer />
         <button className="profile__button" arialabel="Open" onClick={props.handlePopupOpen}></button>
-      </Route>
     </section>
+    </Route>
+    <Route exact path="/supervisor">
+    <section className="profile profile__supervisor">
+      <Bio name={props.name} department={props.department}/>
+    </section>
+    </Route>
+    </>
   );
 }
 

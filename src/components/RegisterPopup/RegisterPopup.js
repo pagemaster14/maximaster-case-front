@@ -80,7 +80,7 @@ function RegisterPopup(props) {
                     <input className="registerPopup__formPortfolioCheckbox" type="checkbox"></input>
                     <p className="registerPopup__formPortfolioAgreement">Я принимаю условия Пользовательского соглашения и даю своё согласие Utal на обработку моей персональной информации</p>
                     </div>
-                    <Link to="/">
+                    <Link to="/worker">
                         <button className="registerPopup__formSubmit">Зарегистрироваться</button>
                     </Link>
                 </form>

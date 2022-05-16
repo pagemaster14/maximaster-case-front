@@ -1,6 +1,6 @@
 .cards {
     min-width: calc(100% - 100px);
-    margin: 20px 50px 0;
+    margin: 30px 50px 0;
     display: grid;
     justify-content: center;
     grid-template-columns: 365px 680px 365px;

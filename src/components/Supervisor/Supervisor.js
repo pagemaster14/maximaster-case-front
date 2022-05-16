@@ -77,7 +77,7 @@ function Supervisor(props) {
         <>
             <Header handlePopupOpen={handleProfilePopupOpen} />
             <main className="supervisor">
-                <Profile />
+                <Profile name="РУКОВОДИТЕЛЬ ДИЗАЙН" department="АЛЕКСАНДР ИВАНОВ" />
                 <div className="supervisor__list">
                     <ul className="supervisor__listDepartments">
                         <ul className="supervisor__listDepartment" onClick={handleEmployeesDesignOpen}>ОТДЕЛ<br />ДИЗАЙНА</ul>
@@ -87,7 +87,7 @@ function Supervisor(props) {
                             <EmployeeItem name="Филипп Карпов" />
                             <EmployeeItem name="Филипп Карпов" />
                         </div>
-                        <ul className="supervisor__listDepartment"  onClick={handleEmployeesAnalyticsOpen}>ОТДЕЛ<br />АНАЛИТИКИ</ul>
+                        <ul className="supervisor__listDepartment" onClick={handleEmployeesAnalyticsOpen}>ОТДЕЛ<br />АНАЛИТИКИ</ul>
                         <div className={`supervisor__listItemContainer ${isEmployeesAnalyticsOpen ? "supervisor__listItemContainer_opened" : ""}`}>
                             <EmployeeItem name="Иван Аналитиков" />
                             <EmployeeItem name="Иван Аналитиков" />

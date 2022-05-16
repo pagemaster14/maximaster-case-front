@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function EmployeeItem(props) {
 
     return (
-        <Link className="employeeItem__link" to="/">
+        <Link className="employeeItem__link" to="/worker">
             <li className="employeeItem">
                 <img src={avatar} alt="Аватар пользователя" className="employeeItem__avatar" />
                 <div className="employeeItem__box">

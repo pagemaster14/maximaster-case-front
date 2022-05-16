@@ -54,6 +54,11 @@
     padding: 0;
 }
 
+.createTaskPopup__closeButton:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .createTaskPopup__info {
     margin: 50px 0 0 50px;
     display: grid;
